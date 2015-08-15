@@ -1,0 +1,41 @@
+* {
+	margin: 0; padding: 0;
+	background: none !important;
+	}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+	}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	}
+
+body {
+	color: #777;
+	background: #eee !important;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	height: 100%;
+	}
+
+
+img {
+	display: block;
+	}
+
+input, select, textarea {
+	color: #777;
+	}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+	}
+
+button {
+	cursor: pointer;
+	}

@@ -1,0 +1,92 @@
+body {
+	background: #eee !important;
+	}
+
+input, select, textarea {
+	color: #777;
+	}
+
+#main {
+	box-shadow: 0px 0 3px #888888;
+	background: #fff !important;
+	}
+
+/*header*/
+#main > .form_content > #panel1 {
+	background: #D8381F !important;
+	}
+
+	#main > .form_content > #panel1 .TLabel, 
+	#main > .form_content > #panel1 .fa {
+		/*color: #417687; */
+		}
+
+
+/*sidebar*/
+#panel2 {
+	background: #191818 !important;
+	color: #6C6C6C;
+	}
+
+	#panel2 .menu-item h4 {
+		border-color: #6C6C6C;
+		}
+
+	#panel2 .menu-item ul > li:hover {
+		background: #222222 !important;
+		color: #fff;
+		}
+
+.tab_button_active {
+	background: #fff !important;
+	border-left: 1px solid #dadada;
+	border-right: 1px solid #dadada;
+	border-top: 2px solid #D8381F;
+	}
+
+.tab_sheet {
+	border-color: #dadada;
+	}
+
+.TEdit, 
+.TComboBox,
+.memo,
+.TDateTimePicker {
+	border-color: #dadada !important;
+	}
+
+.box_label {
+	border-bottom: solid 2px #D8381F;
+	}
+
+.grid td {
+	border-color: #dadada;
+	}
+
+
+#lbAccount {
+	border-color: #fff;
+	}
+
+
+.active-cell {
+	border: 2px solid black !important;
+	}
+
+	.button {
+	  background: #D8381F !important;
+	  color: #fff;
+	}
+
+	.button.enabled:hover {
+	  background: #9C2816 !important;
+	  }
+
+	.button.enabled:active {
+    background: #9C2816 !important;
+    }
+
+
+.combo_box_button {
+	background-color: #D8381F !important;
+	}

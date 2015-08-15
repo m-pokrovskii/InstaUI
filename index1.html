@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="InstaJS" http-equiv="name">
+  <meta content="InstaJS" http-equiv="title">
+  <meta content="WisOne, TypeScript, Cloud App, Web App, Clouds, Online IDE, Cloud IDE, Web IDE, Javascript, 云端开发平台" http-equiv="keywords">
+  <meta content="" http-equiv="description">
+  <meta content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" id="viewport-meta" name="viewport">
+
+  <title>InstaJS</title>
+  <link href="css/WebUI.css" rel="stylesheet">
+  <link href="css/global.css" rel="stylesheet">
+  <link href="css/ui.css" rel="stylesheet">
+  <link href="css/colors-1.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body style="overflow: hidden;">
+  <header></header>
+
+  <div id="browser-detection" style="display: none;">
+    <p class="bd-title" id="noticeTitle">請更新您的瀏覽器</p>
+
+    <div class="bd-notice" id="noticeMessage">
+      <p>我們的網站檢測到您使用的是過時的瀏覽器。使用目前的瀏覽器會阻止您訪問我們的網站功能。</p>
+    </div>
+
+    <p class="bd-notice" style="font-weight: bold">點擊下面的鏈接下載一個新的瀏覽器或升級您現有的瀏覽器</p>
+
+    <ul class="bd-browsers-list">
+      <li class="chrome">
+        <a href="http://www.google.com/chrome/" target="_blank">Google Chrome</a>
+      </li>
+
+      <li class="firefox">
+        <a href="http://www.getfirefox.com/" target="_blank">Mozilla Firefox</a>
+      </li>
+
+      <li class="safari">
+        <a href="http://www.apple.com/safari/" target="_blank">Apple Safari</a>
+      </li>
+
+      <li class="msie">
+        <a href="http://www.getie.com/" target="_blank">Internet Explorer</a>
+      </li>
+
+      <li class="opera">
+        <a href="http://www.opera.com/" target="_blank">Opera</a>
+      </li>
+    </ul>
+
+    <p></p>
+  </div><a class="_sitemap" href="http://banka.instajs.com/sitemap">Site Map</a><br>
+
+  <div class="TImageList enabled" style="overflow: hidden; position: absolute; left: 0px; top: 0px; width: 0px; height: 0px;"></div>
+
+  <div style="position: absolute; width: 100%; top: 0px; left: 0px; height: 100%; background-color: rgb(255, 255, 255);"></div>
+
+  <div style="display: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 999999;">
+    <div class="TIcon enabled" style="display: table; overflow: hidden; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 999999;">
+      <span class="fa fa-spinner fa-spin" style="display: table-cell; vertical-align: middle; text-align: center; font-size: 60px; color: rgb(128, 128, 128);"></span>
+    </div>
+  </div>
+
+  <div class="TForm enabled" id="main" style="overflow: hidden; outline: none; position: absolute; display: block; left: 0px; top: 0px; width: 1366px; height: 667px; cursor: default; opacity: 1; font-size: 12px;" tabindex="-1">
+    <div class="form_content" style="left: 0px; top: 0px; width: 1366px; height: 667px; background-color: rgb(247, 247, 249);">
+      <div class="TPanel enabled" id="panel1" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1366px; height: 50px; left: 0px; top: 0px; background-color: rgb(0, 153, 204);">
+        <div class="TImage enabled" id="image1" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; -webkit-transform: rotate(0deg); left: 4px; top: 0px; width: 265px; height: 50px;"><img src="i/banka_logo.png" style="position: absolute; display: block; width: auto; height: auto; left: 0px; top: 0px;"></div>
+
+        <div class="TIcon enabled" id="icon1" style="display: table; overflow: hidden; position: absolute; cursor: pointer; opacity: 1; left: 1221px; top: 8px; width: 32px; height: 32px;">
+          <span class="fa fa-user" style="display: table-cell; vertical-align: middle; text-align: center; color: white; font-size: 20px;"></span>
+        </div>
+
+        <div class="TLabel enabled" id="lbAccount" style="display: table; overflow: hidden; position: absolute; cursor: pointer; opacity: 1; font-size: 14px; color: white; padding: 0px; left: 1086px; top: 12px; width: 132px; height: 23px;">
+          <span style="display: table-cell; vertical-align: top; text-align: right;">admin</span>
+        </div>
+
+        <div class="TLabel enabled" id="label5" style="display: table; overflow: hidden; position: absolute; cursor: pointer; opacity: 1; font-size: 14px; color: white; padding: 0px; left: 1259px; top: 12px; width: 23px; height: 23px;">
+          <span style="display: table-cell; vertical-align: top; text-align: left;">繁</span>
+        </div>
+
+        <div class="TLabel enabled" id="label6" style="display: table; overflow: hidden; position: absolute; cursor: pointer; opacity: 1; font-size: 14px; color: white; padding: 0px; left: 1284px; top: 12px; width: 23px; height: 23px;">
+          <span style="display: table-cell; vertical-align: top; text-align: left;">简</span>
+        </div>
+
+        <div class="TLabel enabled" id="label7" style="display: table; overflow: hidden; position: absolute; cursor: pointer; opacity: 1; font-size: 14px; color: white; padding: 0px; left: 1307px; top: 12px; width: 44px; height: 23px;">
+          <span style="display: table-cell; vertical-align: top; text-align: left;">English</span>
+        </div>
+      </div>
+
+      <div class="TPanel enabled" id="panel2" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 236px; height: 617px; left: 0px; top: 50px; background-color: rgb(247, 247, 249);">
+        <div class="TWebDiv enabled" id="sbMain" style="overflow: auto; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 0px; width: 236px; height: 617px; background-color: rgb(255, 255, 255);">
+          <div style="width: 100%; height: 100%; overflow: auto; z-index: 0; position: absolute; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px); -webkit-backface-visibility: hidden; backface-visibility: hidden;">
+            <nav>
+              <div class="menu-item">
+                <h4 class="mainmenu-item selected" id="7af5cec8-b230-4100-f029-65d4a8cf6338">Admin</h4>
+
+                <ul id="ul-7af5cec8-b230-4100-f029-65d4a8cf6338" style="height: 155px;">
+                  <li class="submenu-item" id="9b4210ef-63f6-444a-ee31-6ebfeacf79c4">List of Values</li>
+
+                  <li class="submenu-item" id="1d6cd45a-25df-4d61-b003-52c79345fd92">Menu</li>
+
+                  <li class="submenu-item" id="83ec8f6d-7297-47f2-93cc-0fce8dd30547">Role</li>
+
+                  <li class="submenu-item" id="4e55028c-fcb5-4e1e-f97f-8306abbe100f">User</li>
+
+                  <li class="submenu-item" id="0975e1e3-060c-47c7-ec60-d6161bd715fe">User Type</li>
+                </ul>
+              </div>
+
+              <div class="menu-item">
+                <h4 class="mainmenu-item" id="74cf4dab-9d52-459a-c682-d5231790df7b">Bank</h4>
+
+                <ul id="ul-74cf4dab-9d52-459a-c682-d5231790df7b" style="height: 0px;">
+                  <li class="submenu-item" id="b3af908a-2250-4391-d9ef-f057c8a6e84e">Bank Master</li>
+                </ul>
+              </div>
+
+              <div class="menu-item">
+                <h4 class="mainmenu-item" id="fb1886a0-795c-4403-b01a-9c8a58b121a9">Case</h4>
+
+                <ul id="ul-fb1886a0-795c-4403-b01a-9c8a58b121a9">
+                  <li class="submenu-item" id="f3844c90-10e3-4f9b-9a84-c311e4957632">Case Master</li>
+                </ul>
+              </div>
+
+              <div class="menu-item">
+                <h4 class="mainmenu-item selected" id="45b7608b-a90c-4e42-a8d4-9f69615ca753">Customer</h4>
+
+                <ul id="ul-45b7608b-a90c-4e42-a8d4-9f69615ca753" style="height: 31px;">
+                  <li class="submenu-item menu-item-selected" id="2f0ec3d9-581a-47fd-c280-770c1e262378">Customer Master</li>
+                </ul>
+              </div>
+
+              <div class="menu-item">
+                <h4 class="mainmenu-item" id="c333d39b-8e69-4c5e-e7e5-05e2c7de7780">Lead</h4>
+
+                <ul id="ul-c333d39b-8e69-4c5e-e7e5-05e2c7de7780">
+                  <li class="submenu-item" id="d2646314-b1f0-4a95-909b-34cf364b109a">Lead Master</li>
+
+                  <li class="submenu-item" id="2eb9fa3c-92eb-41b2-dbc6-75bf2ab1ab2f">Lead Status</li>
+                </ul>
+              </div>
+
+              <div class="menu-item">
+                <h4 class="mainmenu-item" id="1978402b-2b18-4ab4-937c-3b7566b6418b">Rate</h4>
+
+                <ul id="ul-1978402b-2b18-4ab4-937c-3b7566b6418b">
+                  <li class="submenu-item" id="e2e00a87-d3f2-4560-eaac-0dd86cd1835c">Rate Spread</li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="TPanel enabled" id="pnlMainMenu" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: none; width: 526px; height: 481px; left: 840px; top: 50px; background-color: rgba(0, 0, 0, 0.4);">
+        <div class="TPanel enabled" id="panel5" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 135px; height: 52px; left: 381px; top: -1px; background-color: rgb(0, 153, 204);">
+          <div class="TPanel enabled" id="panel4" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 135px; height: 7px; left: 0px; top: 0px;"></div>
+
+          <div class="TPanel enabled" id="panel6" style="overflow: hidden; position: absolute; cursor: pointer; opacity: 1; display: block; width: 135px; height: 34px; left: 0px; top: 7px;">
+            <div class="TLabel enabled" id="label2" style="display: table; overflow: hidden; position: absolute; cursor: pointer; opacity: 1; font-size: 14px; padding: 0px; left: 43px; top: 0px; width: 60px; height: 24px;">
+              <span style="display: table-cell; vertical-align: middle; text-align: left;">Logout</span>
+            </div>
+
+            <div class="TIcon enabled" id="icon3" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; left: 3px; top: -3px; width: 32px; height: 32px;">
+              <span class="fa fa-sign-out" style="display: table-cell; vertical-align: middle; text-align: center; font-size: 20px;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="TPanel enabled" id="panel3" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1130px; height: 617px; left: 236px; top: 50px; background-color: rgb(247, 247, 249);">
+        <div class="TGroupBox enabled" id="gbMain" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 34px; width: 1130px; height: 583px;">
+          <div class="box_border" style="top: 2px; width: 1126px; height: 579px;"></div>
+
+          <div class="box_corner_top_left" style="top: 2px;"></div>
+
+          <div class="box_corner_top_right" style="top: 2px;"></div>
+
+          <div class="box_corner_bottom_left"></div>
+
+          <div class="box_corner_bottom_right"></div>
+
+          <div class="box_content" style="position: absolute; top: 4px; height: 577px; width: 1124px; background-color: white;">
+            <div class="TWebCss enabled" id="webCss1" style="overflow: hidden; position: absolute; left: 317px; top: 78px; width: 24px; height: 24px;"></div>
+
+            <div class="TForm enabled" id="customerMaster" style="overflow: hidden; outline: none; position: absolute; display: block; left: 0px; top: 0px; width: 1124px; height: 577px; cursor: default; opacity: 1; font-size: 12px; z-index: 3;" tabindex="-1">
+              <div class="form_content" style="left: 0px; top: 0px; width: 1124px; height: 577px; background-color: rgb(247, 247, 249);">
+                <div class="TPanel enabled" id="pnlInfo" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1124px; height: 68px; left: 0px; top: 0px; background-color: rgb(247, 247, 249);">
+                  <div class="TGroupBox enabled" id="groupBox1" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 0px; width: 1124px; height: 61px;">
+                    <div class="box_border" style="top: 10px; width: 1120px; height: 49px;"></div>
+
+                    <div class="box_corner_top_left" style="top: 10px;"></div>
+
+                    <div class="box_corner_top_right" style="top: 10px;"></div>
+
+                    <div class="box_corner_bottom_left"></div>
+
+                    <div class="box_corner_bottom_right"></div>
+
+                    <div class="box_content" style="position: absolute; top: 16px; height: 41px; width: 1118px; background-color: rgb(247, 247, 249);">
+                      <div class="TLabel enabled" id="label1" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 12px; top: 9px; width: 50px; height: 21px;">
+                        <span style="display: table-cell; vertical-align: middle; text-align: left;">Keyword</span>
+                      </div>
+
+                      <div class="TEdit enabled" id="edtSearch" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 73px; top: 9px; width: 135px; height: 21px; background-color: white;">
+                        <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                      </div>
+
+                      <div class="TComboBox enabled" id="cbSearchType" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 214px; top: 9px; width: 131px; height: 21px;">
+                        <div class="combo_box_button" style="top: 2.5px;"></div><input readonly style="height: 100%; border: none; position: absolute; cursor: default; font-size: 12px; width: 113px;" type="text">
+                      </div>
+
+                      <div class="button TButton enabled" id="btnSearch" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 488px; top: 7px; width: 77px; height: 25px; line-height: 25px;">
+                        Search
+                      </div>
+
+                      <div class="button TButton enabled" id="btnNewCustomer" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 571px; top: 7px; width: 129px; height: 25px; line-height: 25px;">
+                        Add New Customer
+                      </div>
+
+                      <div class="TComboBox enabled" id="cbSearchStatus" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 351px; top: 9px; width: 131px; height: 21px;">
+                        <div class="combo_box_button" style="top: 2.5px;"></div><input readonly style="height: 100%; border: none; position: absolute; cursor: default; font-size: 12px; width: 113px;" type="text">
+                      </div>
+                    </div><label class="box_label">Search Criteria</label>
+                  </div>
+                </div>
+
+                <div class="TPageControl enabled" id="pcMain" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 68px; width: 1124px; height: 509px;">
+                  <div style="top: 0px; height: 18px;">
+                    <div style="position: absolute; top: 0px; width: 84px; left: 2px; display: block;">
+                      <div class="tab_button_border_left"></div>
+
+                      <div class="tab_button" style="cursor: default; width: 71px; padding-top: 2px;">
+                        Search Result
+                      </div>
+
+                      <div class="tab_button_border_right"></div>
+                    </div>
+
+                    <div style="position: absolute; top: 0px; width: 49px; left: 86px; display: block;">
+                      <div class="tab_button_border_left_active"></div>
+
+                      <div class="tab_button_active" style="cursor: default; width: 36px; padding-top: 2px;">
+                        Details
+                      </div>
+
+                      <div class="tab_button_border_right_active"></div>
+                    </div>
+                  </div>
+
+                  <div class="tab_sheet" style="overflow: hidden; top: 20px; left: 3px; height: 489px; width: 1118px; background-color: rgb(247, 247, 249);">
+                    <div class="TTabSheet enabled" id="tabSheet1" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: none; left: 0px; top: 0px; width: 1124px; height: 485px;">
+                      <div class="TGrid enabled" id="gdSearch" style="width: 1118px; height: 475px; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 0px; top: 10px; border: 1px solid silver; background-color: rgb(255, 255, 255);">
+                        <table class="grid" style="table-layout: fixed; position: absolute; top: -1px;">
+                          <tbody>
+                            <tr>
+                              <td class="grid_fixed_cell">
+                                <div class="grid_cell_value" style="width: 8px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                              </td>
+
+                              <td class="grid_fixed_cell">
+                                <div class="grid_cell_value" style="width: 88px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                  Customer#
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="grid_fixed_cell">
+                                <div class="grid_cell_value" style="width: 8px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                              </td>
+
+                              <td class="grid_cell">
+                                <div class="grid_cell_value" style="width: 88px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                  2
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="grid_fixed_cell">
+                                <div class="grid_cell_value" style="width: 8px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                              </td>
+
+                              <td class="grid_cell">
+                                <div class="grid_cell_value" style="width: 88px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                  3
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="grid_fixed_cell">
+                                <div class="grid_cell_value" style="width: 8px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                              </td>
+
+                              <td class="grid_cell">
+                                <div class="grid_cell_value" style="width: 88px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                  4
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="grid_fixed_cell">
+                                <div class="grid_cell_value" style="width: 8px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                              </td>
+
+                              <td class="grid_cell">
+                                <div class="grid_cell_value" style="width: 88px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                  1
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div style="position: absolute; border: 2px solid black; display: none; top: 37px; left: 11px; width: 540px; height: 16px;"></div>
+
+                        <div style="overflow: auto; position: absolute; width: 1118px; height: 475px;">
+                          <div style="position: absolute; height: 95px; width: 554px;"></div>
+                        </div><input style="border: 0px; width: 1px; height: 1px; position: absolute; top: -10px; left: -10px;">
+
+                        <div style="cursor: e-resize; position: absolute; width: 6px; left: 10px; height: 475px;"></div>
+
+                        <div style="cursor: e-resize; position: absolute; width: 6px; left: 101px; height: 19px;"></div>
+
+                        <div style="cursor: e-resize; position: absolute; width: 6px; left: 179px; height: 19px;"></div>
+
+                        <div style="cursor: e-resize; position: absolute; width: 6px; left: 259px; height: 19px;"></div>
+
+                        <div style="cursor: e-resize; position: absolute; width: 6px; left: 339px; height: 19px;"></div>
+
+                        <div style="cursor: e-resize; position: absolute; width: 6px; left: 409px; height: 19px;"></div>
+
+                        <div style="cursor: e-resize; position: absolute; width: 6px; left: 480px; height: 19px;"></div>
+
+                        <div style="cursor: e-resize; position: absolute; width: 6px; left: 553px; height: 19px;"></div>
+                      </div>
+                    </div>
+
+                    <div class="TTabSheet enabled" id="tabSheet2" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; left: 0px; top: 0px; width: 1124px; height: 485px; display: block;">
+                      <div class="TPanel enabled" id="panel1" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1118px; height: 46px; left: 0px; top: 0px; background-color: rgb(247, 247, 249);">
+                        <div class="TLabel enabled" id="label2" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 8px; top: 14px; width: 96px; height: 21px;">
+                          <span style="display: table-cell; vertical-align: middle; text-align: left;">Customer#</span>
+                        </div>
+
+                        <div class="TEdit enabled" id="edtCustomerID" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 88px; top: 14px; width: 121px; height: 21px; background-color: white;">
+                          <input autocomplete="off" readonly style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                        </div>
+
+                        <div class="button TButton enabled" id="button1" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 216px; top: 12px; width: 25px; height: 25px; line-height: 25px;">
+                          ..
+                        </div>
+
+                        <div class="TLabel enabled" id="label9" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 277px; top: 13px; width: 31px; height: 21px;">
+                          <span style="display: table-cell; vertical-align: middle; text-align: left;">Status</span>
+                        </div>
+
+                        <div class="TComboBox enabled" id="comboBox3" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 325px; top: 13px; width: 145px; height: 21px;">
+                          <div class="combo_box_button" style="top: 2.5px;"></div><input readonly style="height: 100%; border: none; position: absolute; cursor: default; font-size: 12px; width: 127px;" type="text">
+                        </div>
+
+                        <div class="TLabel enabled" id="label10" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 504px; top: 14px; width: 71px; height: 21px;">
+                          <span style="display: table-cell; vertical-align: middle; text-align: left;">KYC Status</span>
+                        </div>
+
+                        <div class="TComboBox enabled" id="comboBox4" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 582px; top: 14px; width: 145px; height: 21px;">
+                          <div class="combo_box_button" style="top: 2.5px;"></div><input readonly style="height: 100%; border: none; position: absolute; cursor: default; font-size: 12px; width: 127px;" type="text">
+                        </div>
+                      </div>
+
+                      <div class="TPageControl enabled" id="pcCustInfo" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 46px; width: 1118px; height: 439px;">
+                        <div style="top: 0px; height: 18px;">
+                          <div style="position: absolute; top: 0px; width: 88px; left: 2px; display: block;">
+                            <div class="tab_button_border_left"></div>
+
+                            <div class="tab_button" style="cursor: default; width: 75px; padding-top: 2px;">
+                              Customer Info
+                            </div>
+
+                            <div class="tab_button_border_right"></div>
+                          </div>
+
+                          <div style="position: absolute; top: 0px; width: 67px; left: 90px; display: block;">
+                            <div class="tab_button_border_left"></div>
+
+                            <div class="tab_button" style="cursor: default; width: 54px; padding-top: 2px;">
+                              Rate Class
+                            </div>
+
+                            <div class="tab_button_border_right"></div>
+                          </div>
+
+                          <div style="position: absolute; top: 0px; width: 69px; left: 157px; display: none;">
+                            <div class="tab_button_border_left"></div>
+
+                            <div class="tab_button" style="cursor: default; width: 56px; padding-top: 2px;">
+                              Agent Info
+                            </div>
+
+                            <div class="tab_button_border_right"></div>
+                          </div>
+
+                          <div style="position: absolute; top: 0px; width: 75px; left: 157px; display: block;">
+                            <div class="tab_button_border_left"></div>
+
+                            <div class="tab_button" style="cursor: default; width: 62px; padding-top: 2px;">
+                              Attachment
+                            </div>
+
+                            <div class="tab_button_border_right"></div>
+                          </div>
+
+                          <div style="position: absolute; top: 0px; width: 101px; left: 232px; display: block;">
+                            <div class="tab_button_border_left_active"></div>
+
+                            <div class="tab_button_active" style="cursor: default; width: 88px; padding-top: 2px;">
+                              Company Profile
+                            </div>
+
+                            <div class="tab_button_border_right_active"></div>
+                          </div>
+
+                          <div style="position: absolute; top: 0px; width: 63px; left: 333px; display: block;">
+                            <div class="tab_button_border_left"></div>
+
+                            <div class="tab_button" style="cursor: default; width: 50px; padding-top: 2px;">
+                              Bank Info
+                            </div>
+
+                            <div class="tab_button_border_right"></div>
+                          </div>
+
+                          <div style="position: absolute; top: 0px; width: 74px; left: 396px; display: block;">
+                            <div class="tab_button_border_left"></div>
+
+                            <div class="tab_button" style="cursor: default; width: 61px; padding-top: 2px;">
+                              Rep History
+                            </div>
+
+                            <div class="tab_button_border_right"></div>
+                          </div>
+                        </div>
+
+                        <div class="tab_sheet" style="overflow: hidden; top: 20px; left: 3px; height: 419px; width: 1112px; background-color: rgb(247, 247, 249);">
+                          <div class="TTabSheet enabled" id="tabSheet3" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: none; left: 0px; top: 0px; width: 1118px; height: 415px;">
+                            <div class="TScrollBox enabled" id="scrollBox1" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 0px; width: 1112px; height: 415px; background-color: rgb(247, 247, 249);">
+                              <div style="width: 100%; height: 100%; overflow: auto; z-index: 0; position: absolute; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px); -webkit-backface-visibility: hidden; backface-visibility: hidden; background-color: rgb(247, 247, 249);">
+                                <div class="TPanel enabled" id="panel2" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1112px; height: 429px; left: 0px; top: 0px; background-color: rgb(247, 247, 249);">
+                                  <div class="TLabel enabled" id="label3" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 10px; top: 12px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Prefix</span>
+                                  </div>
+
+                                  <div class="TComboBox enabled" id="comboBox5" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 12px; width: 197px; height: 21px;">
+                                    <div class="combo_box_button" style="top: 2.5px;"></div><input style="height: 100%; border: none; position: absolute; font-size: 12px; width: 179px;" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label5" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 10px; top: 39px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">First Name</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edtFirstName" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 39px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label6" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 10px; top: 66px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Last Name</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit3" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 66px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label7" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 10px; top: 93px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Chinese Name</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit4" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 93px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label8" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 10px; top: 121px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Company</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edtCompany" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 120px; width: 163px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" readonly style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="button TButton enabled" id="btnSelCompany" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 275px; top: 118px; width: 29px; height: 25px; line-height: 25px;">
+                                    ...
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label4" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 10px; top: 161px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Work Phone</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit12" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 161px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label14" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 10px; top: 188px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">mobile Phone</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit13" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 188px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label15" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 10px; top: 215px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Email</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit14" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 215px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label16" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 10px; top: 262px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Address1</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit15" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 262px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label17" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 10px; top: 289px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Address2</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit16" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 289px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label11" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 10px; top: 316px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">City</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit7" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 316px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label12" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 10px; top: 343px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">State</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit8" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 343px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label13" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 10px; top: 370px; width: 83px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Country</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit9" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 106px; top: 370px; width: 197px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TGroupBox enabled" id="groupBox2" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 334px; top: 18px; width: 276px; height: 90px;">
+                                    <div class="box_border" style="top: 10px; width: 272px; height: 78px;"></div>
+
+                                    <div class="box_corner_top_left" style="top: 10px;"></div>
+
+                                    <div class="box_corner_top_right" style="top: 10px;"></div>
+
+                                    <div class="box_corner_bottom_left"></div>
+
+                                    <div class="box_corner_bottom_right"></div>
+
+                                    <div class="box_content" style="position: absolute; top: 16px; height: 70px; width: 270px; background-color: rgb(247, 247, 249);">
+                                      <div class="TCheckBox enabled" id="checkBox1" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 33px; top: 17px; width: 97px; height: 17px;">
+                                        <div class="check_box_checked" style="height: 13px; width: 13px; top: 1.5px;"></div>
+
+                                        <div class="check_box_label" style="cursor: default; height: 15px;">
+                                          MSO
+                                        </div>
+                                      </div>
+
+                                      <div class="TCheckBox enabled" id="checkBox2" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 136px; top: 17px; width: 97px; height: 17px;">
+                                        <div class="check_box_checked" style="height: 13px; width: 13px; top: 1.5px;"></div>
+
+                                        <div class="check_box_label" style="cursor: default; height: 15px;">
+                                          HongGa
+                                        </div>
+                                      </div>
+
+                                      <div class="TCheckBox enabled" id="checkBox3" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 33px; top: 43px; width: 97px; height: 17px;">
+                                        <div class="check_box_checked" style="height: 13px; width: 13px; top: 1.5px;"></div>
+
+                                        <div class="check_box_label" style="cursor: default; height: 15px;">
+                                          Rep
+                                        </div>
+                                      </div>
+
+                                      <div class="TCheckBox enabled" id="cbAgent" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 136px; top: 43px; width: 97px; height: 17px;">
+                                        <div class="check_box_unchecked" style="height: 13px; width: 13px; top: 1.5px;"></div>
+
+                                        <div class="check_box_label" style="cursor: default; height: 15px;">
+                                          Agent
+                                        </div>
+                                      </div>
+                                    </div><label class="box_label">Corporate Customer</label>
+                                  </div>
+
+                                  <div class="TGroupBox enabled" id="groupBox3" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 333px; top: 123px; width: 278px; height: 105px;">
+                                    <div class="box_border" style="top: 10px; width: 274px; height: 93px;"></div>
+
+                                    <div class="box_corner_top_left" style="top: 10px;"></div>
+
+                                    <div class="box_corner_top_right" style="top: 10px;"></div>
+
+                                    <div class="box_corner_bottom_left"></div>
+
+                                    <div class="box_corner_bottom_right"></div>
+
+                                    <div class="box_content" style="position: absolute; top: 16px; height: 85px; width: 272px; background-color: rgb(247, 247, 249);">
+                                      <div class="TLabel enabled" id="label18" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 10px; top: 9px; width: 132px; height: 21px;">
+                                        <span style="display: table-cell; vertical-align: middle; text-align: left;">Preferrfed Language</span>
+                                      </div>
+
+                                      <div class="TLabel enabled" id="label19" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 11px; top: 39px; width: 129px; height: 21px;">
+                                        <span style="display: table-cell; vertical-align: middle; text-align: left;">Country Of Residence</span>
+                                      </div>
+
+                                      <div class="TComboBox enabled" id="comboBox6" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 144px; top: 8px; width: 121px; height: 21px;">
+                                        <div class="combo_box_button" style="top: 2.5px;"></div><input style="height: 100%; border: none; position: absolute; font-size: 12px; width: 103px;" type="text">
+                                      </div>
+
+                                      <div class="TComboBox enabled" id="comboBox7" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 144px; top: 39px; width: 121px; height: 21px;">
+                                        <div class="combo_box_button" style="top: 2.5px;"></div><input style="height: 100%; border: none; position: absolute; font-size: 12px; width: 103px;" type="text">
+                                      </div>
+                                    </div><label class="box_label">GEO Status</label>
+                                  </div>
+
+                                  <div class="TGroupBox enabled" id="groupBox4" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 334px; top: 242px; width: 277px; height: 150px;">
+                                    <div class="box_border" style="top: 10px; width: 273px; height: 138px;"></div>
+
+                                    <div class="box_corner_top_left" style="top: 10px;"></div>
+
+                                    <div class="box_corner_top_right" style="top: 10px;"></div>
+
+                                    <div class="box_corner_bottom_left"></div>
+
+                                    <div class="box_corner_bottom_right"></div>
+
+                                    <div class="box_content" style="position: absolute; top: 16px; height: 130px; width: 271px; background-color: rgb(247, 247, 249);">
+                                      <textarea class="memo enabled" id="memo1" style="overflow: scroll; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 0px; width: 271px; height: 130px; padding-left: 4px;">
+</textarea>
+                                    </div><label class="box_label">Comment</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="TTabSheet enabled" id="tabSheet8" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; left: 0px; top: 0px; width: 1118px; height: 415px; display: none;">
+                            <div class="TLabel enabled" id="label36" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 9px; top: 12px; width: 97px; height: 21px;">
+                              <span style="display: table-cell; vertical-align: middle; text-align: left;">Rate Class</span>
+                            </div>
+
+                            <div class="TComboBox enabled" id="cbRateClass" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 82px; top: 13px; width: 145px; height: 21px;">
+                              <div class="combo_box_button" style="top: 2.5px;"></div><input readonly style="height: 100%; border: none; position: absolute; cursor: default; font-size: 12px; width: 127px;" type="text">
+                            </div>
+
+                            <div class="TGroupBox enabled" id="groupBox7" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 12px; top: 49px; width: 497px; height: 90px;">
+                              <div class="box_border" style="top: 10px; width: 493px; height: 78px;"></div>
+
+                              <div class="box_corner_top_left" style="top: 10px;"></div>
+
+                              <div class="box_corner_top_right" style="top: 10px;"></div>
+
+                              <div class="box_corner_bottom_left"></div>
+
+                              <div class="box_corner_bottom_right"></div>
+
+                              <div class="box_content" style="position: absolute; top: 16px; height: 70px; width: 491px; background-color: rgb(247, 247, 249);">
+                                <div class="TLabel enabled" id="label38" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 17px; top: 9px; width: 80px; height: 21px;">
+                                  <span style="display: table-cell; vertical-align: middle; text-align: left;">USD&gt;HKD</span>
+                                </div>
+
+                                <div class="TEdit enabled" id="edit22" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 99px; top: 9px; width: 121px; height: 21px; background-color: white;">
+                                  <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                </div>
+
+                                <div class="TLabel enabled" id="label39" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 17px; top: 36px; width: 80px; height: 21px;">
+                                  <span style="display: table-cell; vertical-align: middle; text-align: left;">HKD&gt;USD</span>
+                                </div>
+
+                                <div class="TEdit enabled" id="edit23" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 99px; top: 36px; width: 121px; height: 21px; background-color: white;">
+                                  <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                </div>
+
+                                <div class="TLabel enabled" id="label40" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 246px; top: 36px; width: 80px; height: 21px;">
+                                  <span style="display: table-cell; vertical-align: middle; text-align: left;">HKD&gt;CNY</span>
+                                </div>
+
+                                <div class="TLabel enabled" id="label41" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 246px; top: 9px; width: 80px; height: 21px;">
+                                  <span style="display: table-cell; vertical-align: middle; text-align: left;">CNY&gt;HKD</span>
+                                </div>
+
+                                <div class="TEdit enabled" id="edit24" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 329px; top: 9px; width: 121px; height: 21px; background-color: white;">
+                                  <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                </div>
+
+                                <div class="TEdit enabled" id="edit25" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 329px; top: 36px; width: 121px; height: 21px; background-color: white;">
+                                  <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                </div>
+                              </div><label class="box_label">Rate Adjustment</label>
+                            </div>
+                          </div>
+
+                          <div class="TTabSheet enabled" id="tsAgentInfo" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: none; left: 0px; top: 0px; width: 1118px; height: 415px;">
+                            <div class="TLabel enabled" id="label33" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 13px; top: 13px; width: 69px; height: 21px;">
+                              <span style="display: table-cell; vertical-align: middle; text-align: left;">Agent ID</span>
+                            </div>
+
+                            <div class="TEdit enabled" id="edit5" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 96px; top: 13px; width: 121px; height: 21px; background-color: white;">
+                              <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                            </div>
+
+                            <div class="button TButton enabled" id="button2" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 222px; top: 11px; width: 28px; height: 25px; line-height: 25px;">
+                              ..
+                            </div>
+
+                            <div class="TLabel enabled" id="label31" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 266px; top: 13px; width: 75px; height: 21px;">
+                              <span style="display: table-cell; vertical-align: middle; text-align: left;">Agent Status</span>
+                            </div>
+
+                            <div class="TComboBox enabled" id="comboBox2" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 347px; top: 13px; width: 145px; height: 21px;">
+                              <div class="combo_box_button" style="top: 2.5px;"></div><input readonly style="height: 100%; border: none; position: absolute; cursor: default; font-size: 12px; width: 127px;" type="text">
+                            </div>
+
+                            <div class="TGroupBox enabled" id="groupBox9" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 10px; top: 36px; width: 695px; height: 177px;">
+                              <div class="box_border" style="top: 10px; width: 691px; height: 165px;"></div>
+
+                              <div class="box_corner_top_left" style="top: 10px;"></div>
+
+                              <div class="box_corner_top_right" style="top: 10px;"></div>
+
+                              <div class="box_corner_bottom_left"></div>
+
+                              <div class="box_corner_bottom_right"></div>
+
+                              <div class="box_content" style="position: absolute; top: 16px; height: 157px; width: 689px; background-color: rgb(247, 247, 249);">
+                                <textarea class="memo enabled" id="memo4" style="overflow: scroll; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 0px; width: 689px; height: 157px; padding-left: 4px;">
+</textarea>
+                              </div><label class="box_label">Comment</label>
+                            </div>
+
+                            <div class="TGroupBox enabled" id="groupBox8" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 12px; top: 223px; width: 695px; height: 118px;">
+                              <div class="box_border" style="top: 10px; width: 691px; height: 106px;"></div>
+
+                              <div class="box_corner_top_left" style="top: 10px;"></div>
+
+                              <div class="box_corner_top_right" style="top: 10px;"></div>
+
+                              <div class="box_corner_bottom_left"></div>
+
+                              <div class="box_corner_bottom_right"></div>
+
+                              <div class="box_content" style="position: absolute; top: 16px; height: 98px; width: 689px; background-color: rgb(247, 247, 249);">
+                                <div class="TLabel enabled" id="label32" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 10px; top: 7px; width: 142px; height: 21px;">
+                                  <span style="display: table-cell; vertical-align: middle; text-align: left;">Commission Rule</span>
+                                </div>
+
+                                <div class="TComboBox enabled" id="comboBox1" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 186px; top: 7px; width: 152px; height: 21px;">
+                                  <div class="combo_box_button" style="top: 2.5px;"></div><input readonly style="height: 100%; border: none; position: absolute; cursor: default; font-size: 12px; width: 134px;" type="text">
+                                </div>
+
+                                <div class="TLabel enabled" id="label34" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 10px; top: 34px; width: 142px; height: 21px;">
+                                  <span style="display: table-cell; vertical-align: middle; text-align: left;">Percentage</span>
+                                </div>
+
+                                <div class="TEdit enabled" id="edit18" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 186px; top: 34px; width: 152px; height: 21px; background-color: white;">
+                                  <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                </div>
+
+                                <div class="TLabel enabled" id="label35" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 10px; top: 61px; width: 142px; height: 21px;">
+                                  <span style="display: table-cell; vertical-align: middle; text-align: left;">Max Payout</span>
+                                </div>
+
+                                <div class="TEdit enabled" id="edit20" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 186px; top: 61px; width: 152px; height: 21px; background-color: white;">
+                                  <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                </div>
+                              </div><label class="box_label">Commission</label>
+                            </div>
+                          </div>
+
+                          <div class="TTabSheet enabled" id="tabSheet4" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: none; left: 0px; top: 0px; width: 1118px; height: 415px;">
+                            <div class="TGrid enabled" id="gdAttachment" style="width: 1112px; height: 374px; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 0px; top: 41px; border: 1px solid silver; background-color: rgb(255, 255, 255);">
+                              <table class="grid" style="table-layout: fixed; position: absolute; top: -1px;">
+                                <tbody>
+                                  <tr>
+                                    <td class="grid_fixed_cell">
+                                      <div class="grid_cell_value" style="width: 11px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                                    </td>
+
+                                    <td class="grid_fixed_cell">
+                                      <div class="grid_cell_value" style="width: 127px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                        Doc Type
+                                      </div>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="grid_fixed_cell">
+                                      <div class="grid_cell_value" style="width: 11px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                                    </td>
+
+                                    <td class="grid_cell">
+                                      <div class="grid_cell_value" style="width: 127px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                        business_due_diligence
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <div style="position: absolute; border: 2px solid black; display: block; top: -1px; left: 14px; width: 442px; height: 16px;"></div>
+
+                              <div style="overflow: auto; position: absolute; width: 1112px; height: 374px;">
+                                <div style="position: absolute; height: 38px; width: 459px;"></div>
+                              </div><input style="border: 0px; width: 1px; height: 1px; position: absolute; top: -10px; left: -10px;">
+
+                              <div style="cursor: e-resize; position: absolute; width: 6px; left: 13px; height: 374px;"></div>
+
+                              <div style="cursor: e-resize; position: absolute; width: 6px; left: 143px; height: 19px;"></div>
+
+                              <div style="cursor: e-resize; position: absolute; width: 6px; left: 257px; height: 19px;"></div>
+
+                              <div style="cursor: e-resize; position: absolute; width: 6px; left: 365px; height: 19px;"></div>
+
+                              <div style="cursor: e-resize; position: absolute; width: 6px; left: 458px; height: 19px;"></div>
+                            </div>
+
+                            <div class="TPanel enabled" id="pnlAttachment" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1112px; height: 41px; left: 0px; top: 0px; background-color: rgb(247, 247, 249);">
+                              <div class="button TButton enabled" id="btnUpload" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 7px; top: 8px; width: 75px; height: 25px; line-height: 25px;">
+                                Upload
+                              </div>
+
+                              <div class="button TButton enabled" id="btnDownload" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 88px; top: 8px; width: 75px; height: 25px; line-height: 25px;">
+                                Download
+                              </div>
+
+                              <div class="button TButton enabled" id="btnArchive" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 169px; top: 8px; width: 75px; height: 25px; line-height: 25px;">
+                                Archive
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="TTabSheet enabled" id="tabSheet5" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 0px; width: 1118px; height: 415px;">
+                            <div class="TPanel enabled" id="panel3" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1112px; height: 265px; left: 0px; top: 0px; background-color: rgb(247, 247, 249);">
+                              <div class="TLabel enabled" id="label30" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 20px; top: 11px; width: 118px; height: 21px;">
+                                <span style="display: table-cell; vertical-align: middle; text-align: left;">Company Name</span>
+                              </div>
+
+                              <div class="TEdit enabled" id="edit19" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 145px; top: 11px; width: 146px; height: 21px; background-color: white;">
+                                <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                              </div>
+
+                              <div class="button TButton enabled" id="btnSelCompany2" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 300px; top: 9px; width: 29px; height: 25px; line-height: 25px;">
+                                ...
+                              </div>
+
+                              <div class="TLabel enabled" id="label27" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 368px; top: 13px; width: 150px; height: 21px;">
+                                <span style="display: table-cell; vertical-align: middle; text-align: left;">Nature of Business</span>
+                              </div>
+
+                              <div class="TLabel enabled" id="label20" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 20px; top: 38px; width: 116px; height: 21px;">
+                                <span style="display: table-cell; vertical-align: middle; text-align: left;">Type of Business</span>
+                              </div>
+
+                              <div class="TEdit enabled" id="edit1" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 145px; top: 38px; width: 186px; height: 21px; background-color: white;">
+                                <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                              </div>
+                              <textarea class="memo enabled" id="memo2" style="overflow: scroll; position: absolute; cursor: default; opacity: 1; display: block; left: 368px; top: 37px; width: 358px; height: 88px; padding-left: 4px;">
+</textarea>
+
+                              <div class="TLabel enabled" id="label21" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 20px; top: 65px; width: 116px; height: 21px;">
+                                <span style="display: table-cell; vertical-align: middle; text-align: left;">Incorporation #</span>
+                              </div>
+
+                              <div class="TEdit enabled" id="edit2" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 145px; top: 65px; width: 186px; height: 21px; background-color: white;">
+                                <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                              </div>
+
+                              <div class="TLabel enabled" id="label22" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 20px; top: 92px; width: 116px; height: 21px;">
+                                <span style="display: table-cell; vertical-align: middle; text-align: left;">Exp Date</span>
+                              </div>
+
+                              <div class="TDateTimePicker enabled" id="dateTimePicker2" style="border: 1px solid silver; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 145px; top: 92px; width: 186px; height: 21px;">
+                                <input style="left: 0px; top: 0px; width: 154px; height: 21px; border-width: 0px;">
+
+                                <div style="position: absolute; top: 0px; width: 32px; right: 0px; height: 100%; display: table; background-color: rgb(211, 211, 211);">
+                                  <div class="fa fa-calendar" style="display: table-cell; font-size: 16px; text-align: center; vertical-align: middle; left: 157px;"></div>
+                                </div>
+                              </div>
+
+                              <div class="TLabel enabled" id="label23" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 20px; top: 119px; width: 116px; height: 21px;">
+                                <span style="display: table-cell; vertical-align: middle; text-align: left;">Registration Loc</span>
+                              </div>
+
+                              <div class="TEdit enabled" id="edit10" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 145px; top: 119px; width: 186px; height: 21px; background-color: white;">
+                                <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                              </div>
+
+                              <div class="TLabel enabled" id="label28" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 368px; top: 141px; width: 150px; height: 21px;">
+                                <span style="display: table-cell; vertical-align: middle; text-align: left;">Other Comments</span>
+                              </div>
+
+                              <div class="TLabel enabled" id="label24" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; padding: 0px; left: 20px; top: 146px; width: 116px; height: 21px;">
+                                <span style="display: table-cell; vertical-align: middle; text-align: left;">Country</span>
+                              </div>
+
+                              <div class="TEdit enabled" id="edit11" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 145px; top: 146px; width: 186px; height: 21px; background-color: white;">
+                                <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                              </div>
+                              <textarea class="memo enabled" id="memo3" style="overflow: scroll; position: absolute; cursor: default; opacity: 1; display: block; left: 368px; top: 162px; width: 356px; height: 89px; padding-left: 4px;">
+</textarea>
+
+                              <div class="TGroupBox enabled" id="groupBox5" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 14px; top: 169px; width: 323px; height: 90px;">
+                                <div class="box_border" style="top: 10px; width: 319px; height: 78px;"></div>
+
+                                <div class="box_corner_top_left" style="top: 10px;"></div>
+
+                                <div class="box_corner_top_right" style="top: 10px;"></div>
+
+                                <div class="box_corner_bottom_left"></div>
+
+                                <div class="box_corner_bottom_right"></div>
+
+                                <div class="box_content" style="position: absolute; top: 16px; height: 70px; width: 317px; background-color: rgb(247, 247, 249);">
+                                  <div class="TLabel enabled" id="label25" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 12px; top: 7px; width: 99px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">MSO Reg#</span>
+                                  </div>
+
+                                  <div class="TEdit enabled" id="edit17" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 131px; top: 7px; width: 175px; height: 21px; background-color: white;">
+                                    <input autocomplete="off" style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                                  </div>
+
+                                  <div class="TLabel enabled" id="label26" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 12px; top: 36px; width: 99px; height: 21px;">
+                                    <span style="display: table-cell; vertical-align: middle; text-align: left;">Exp Date</span>
+                                  </div>
+
+                                  <div class="TDateTimePicker enabled" id="dateTimePicker1" style="border: 1px solid silver; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 131px; top: 37px; width: 175px; height: 20px;">
+                                    <input style="left: 0px; top: 0px; width: 143px; height: 20px; border-width: 0px;">
+
+                                    <div style="position: absolute; top: 0px; width: 32px; right: 0px; height: 100%; display: table; background-color: rgb(211, 211, 211);">
+                                      <div class="fa fa-calendar" style="display: table-cell; font-size: 16px; text-align: center; vertical-align: middle; left: 146px;"></div>
+                                    </div>
+                                  </div>
+                                </div><label class="box_label">If MSO</label>
+                              </div>
+                            </div>
+
+                            <div class="TGroupBox enabled" id="groupBox6" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; left: 0px; top: 265px; width: 1112px; height: 150px;">
+                              <div class="box_border" style="top: 10px; width: 1108px; height: 138px;"></div>
+
+                              <div class="box_corner_top_left" style="top: 10px;"></div>
+
+                              <div class="box_corner_top_right" style="top: 10px;"></div>
+
+                              <div class="box_corner_bottom_left"></div>
+
+                              <div class="box_corner_bottom_right"></div>
+
+                              <div class="box_content" style="position: absolute; top: 16px; height: 130px; width: 1106px; background-color: rgb(247, 247, 249);">
+                                <div class="TPanel enabled" id="pnlDirector" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1106px; height: 41px; left: 0px; top: 0px; background-color: rgb(247, 247, 249);">
+                                  <div style="position: absolute; top: 0px; left: 0px; width: 1106px; height: 41px; z-index: 1;"></div>
+
+                                  <div class="button TButton enabled" id="btnAddDirector" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 11px; top: 9px; width: 75px; height: 25px; line-height: 25px;">
+                                    Add
+                                  </div>
+
+                                  <div class="button TButton enabled" id="btnDelDirector" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 92px; top: 9px; width: 75px; height: 25px; line-height: 25px;">
+                                    Delete
+                                  </div>
+                                </div>
+
+                                <div class="TGrid enabled" id="gdDirector" style="width: 1106px; height: 89px; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 0px; top: 41px; border: 1px solid silver; background-color: rgb(255, 255, 255);">
+                                  <table class="grid" style="table-layout: fixed; position: absolute; top: -1px;">
+                                    <tbody>
+                                      <tr>
+                                        <td class="grid_fixed_cell">
+                                          <div class="grid_cell_value" style="width: 9px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                                        </td>
+
+                                        <td class="grid_fixed_cell">
+                                          <div class="grid_cell_value" style="width: 132px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                            Full Name
+                                          </div>
+                                        </td>
+
+                                        <td class="grid_fixed_cell">
+                                          <div class="grid_cell_value" style="width: 132px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                            Relationship
+                                          </div>
+                                        </td>
+
+                                        <td class="grid_fixed_cell">
+                                          <div class="grid_cell_value" style="width: 96px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                            Director
+                                          </div>
+                                        </td>
+
+                                        <td class="grid_fixed_cell">
+                                          <div class="grid_cell_value" style="width: 129px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                            Authorized Person
+                                          </div>
+                                        </td>
+
+                                        <td class="grid_fixed_cell">
+                                          <div class="grid_cell_value" style="width: 74px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                            Owner
+                                          </div>
+                                        </td>
+
+                                        <td class="grid_fixed_cell">
+                                          <div class="grid_cell_value" style="width: 81px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                            Shares
+                                          </div>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="grid_fixed_cell">
+                                          <div class="grid_cell_value" style="width: 9px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="grid_cell_value" style="width: 132px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                            director
+                                          </div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="grid_cell_value" style="width: 132px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="check_box_checked" style="width: 13px; height: 13px; white-space: nowrap; overflow: hidden; font-size: 12px; position: relative; top: 1px; left: 1px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="check_box_unchecked" style="width: 13px; height: 13px; white-space: nowrap; overflow: hidden; font-size: 12px; position: relative; top: 1px; left: 1px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="check_box_unchecked" style="width: 13px; height: 13px; white-space: nowrap; overflow: hidden; font-size: 12px; position: relative; top: 1px; left: 1px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="grid_cell_value" style="width: 81px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;"></div>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="grid_fixed_cell">
+                                          <div class="grid_cell_value" style="width: 9px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="grid_cell_value" style="width: 132px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                            share holder
+                                          </div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="grid_cell_value" style="width: 132px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="check_box_unchecked" style="width: 13px; height: 13px; white-space: nowrap; overflow: hidden; font-size: 12px; position: relative; top: 1px; left: 1px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="check_box_unchecked" style="width: 13px; height: 13px; white-space: nowrap; overflow: hidden; font-size: 12px; position: relative; top: 1px; left: 1px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="check_box_checked" style="width: 13px; height: 13px; white-space: nowrap; overflow: hidden; font-size: 12px; position: relative; top: 1px; left: 1px;"></div>
+                                        </td>
+
+                                        <td class="grid_cell">
+                                          <div class="grid_cell_value" style="width: 81px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;"></div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
+                                  <div class="active-cell" style=""></div>
+
+                                  <div style="overflow: auto; position: absolute; width: 1106px; height: 89px;">
+                                    <div style="position: absolute; height: 57px; width: 674px;"></div>
+                                  </div><input style="border: 0px; width: 1px; height: 1px; position: absolute; top: -10px; left: -10px;">
+
+                                  <div style="cursor: e-resize; position: absolute; width: 6px; left: 11px; height: 89px;"></div>
+
+                                  <div style="cursor: e-resize; position: absolute; width: 6px; left: 146px; height: 19px;"></div>
+
+                                  <div style="cursor: e-resize; position: absolute; width: 6px; left: 281px; height: 19px;"></div>
+
+                                  <div style="cursor: e-resize; position: absolute; width: 6px; left: 380px; height: 19px;"></div>
+
+                                  <div style="cursor: e-resize; position: absolute; width: 6px; left: 512px; height: 19px;"></div>
+
+                                  <div style="cursor: e-resize; position: absolute; width: 6px; left: 589px; height: 19px;"></div>
+
+                                  <div style="cursor: e-resize; position: absolute; width: 6px; left: 673px; height: 19px;"></div>
+                                </div>
+                              </div><label class="box_label">Directors, Shareholders, Connections, etc.</label>
+                            </div>
+                          </div>
+
+                          <div class="TTabSheet enabled" id="tabSheet6" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: none; left: 0px; top: 0px; width: 1118px; height: 415px;">
+                            <div class="TGrid enabled" id="gdBank" style="width: 1112px; height: 374px; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 0px; top: 41px; border: 1px solid silver; background-color: rgb(255, 255, 255);">
+                              <table class="grid" style="table-layout: fixed; position: absolute; top: -1px;">
+                                <tbody>
+                                  <tr>
+                                    <td class="grid_fixed_cell">
+                                      <div class="grid_cell_value" style="width: 9px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                                    </td>
+
+                                    <td class="grid_fixed_cell">
+                                      <div class="grid_cell_value" style="width: 94px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                        Location
+                                      </div>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="grid_fixed_cell">
+                                      <div class="grid_cell_value" style="width: 9px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px;"></div>
+                                    </td>
+
+                                    <td class="grid_cell">
+                                      <div class="grid_cell_value" style="width: 94px; height: 16px; white-space: nowrap; overflow: hidden;"></div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <div style="position: absolute; border: 2px solid black; display: block; top: 18px; left: 12px;"></div>
+
+                              <div style="overflow: auto; position: absolute; width: 1112px; height: 374px;">
+                                <div style="position: absolute; height: 38px; width: 603px;"></div>
+                              </div><input style="border: 0px; width: 1px; height: 1px; position: absolute; top: -10px; left: -10px;">
+
+                              <div style="cursor: e-resize; position: absolute; width: 6px; left: 11px; height: 374px;"></div>
+
+                              <div style="cursor: e-resize; position: absolute; width: 6px; left: 108px; height: 19px;"></div>
+                            </div>
+
+                            <div class="TComboBox enabled" id="cbCurrency" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: none; left: 260px; top: 103px; width: 145px; height: 21px;">
+                              <div class="combo_box_button" style="top: 2.5px;"></div><input style="height: 100%; border: none; position: absolute; font-size: 12px; width: 127px;" type="text">
+                            </div>
+
+                            <div class="TComboBox enabled" id="cbBankStatus" style="border: 1px solid silver; box-sizing: border-box; overflow: hidden; position: absolute; cursor: default; opacity: 1; display: none; left: 260px; top: 138px; width: 145px; height: 21px;">
+                              <div class="combo_box_button" style="top: 2.5px;"></div><input style="height: 100%; border: none; position: absolute; font-size: 12px; width: 127px;" type="text">
+                            </div>
+
+                            <div class="TPanel enabled" id="pnlBank" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1112px; height: 41px; left: 0px; top: 0px; background-color: rgb(247, 247, 249);">
+                              <div class="button TButton enabled" id="button3" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 10px; top: 7px; width: 75px; height: 25px; line-height: 25px;">
+                                Add
+                              </div>
+
+                              <div class="button TButton enabled" id="button5" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 91px; top: 7px; width: 75px; height: 25px; line-height: 25px;">
+                                Delete
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="TTabSheet enabled" id="tabSheet7" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: none; left: 0px; top: 0px; width: 1118px; height: 415px;">
+                            <div class="TGrid enabled" id="grid3" style="width: 1112px; height: 371px; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 0px; top: 44px; border: 1px solid silver; background-color: rgb(255, 255, 255);">
+                              <table class="grid" style="table-layout: fixed; position: absolute; top: -1px;">
+                                <tbody>
+                                  <tr>
+                                    <td class="grid_fixed_cell">
+                                      <div class="grid_cell_value" style="width: 9px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                                    </td>
+
+                                    <td class="grid_fixed_cell">
+                                      <div class="grid_cell_value" style="width: 95px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                        Agent Name
+                                      </div>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="grid_fixed_cell">
+                                      <div class="grid_cell_value" style="width: 9px; height: 16px; white-space: nowrap; overflow: hidden; min-height: 16px; font-size: 12px;"></div>
+                                    </td>
+
+                                    <td class="grid_cell">
+                                      <div class="grid_cell_value" style="width: 95px; height: 16px; white-space: nowrap; overflow: hidden; font-size: 12px;">
+                                        customer2
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <div style="position: absolute; border: 2px solid black; display: block; top: -1px; left: 12px; width: 414px;"></div>
+
+                              <div style="overflow: auto; position: absolute; width: 1112px; height: 371px;">
+                                <div style="position: absolute; height: 38px; width: 429px;"></div>
+                              </div><input style="border: 0px; width: 1px; height: 1px; position: absolute; top: -10px; left: -10px;">
+
+                              <div style="cursor: e-resize; position: absolute; width: 6px; left: 11px; height: 371px;"></div>
+
+                              <div style="cursor: e-resize; position: absolute; width: 6px; left: 109px; height: 19px;"></div>
+                            </div>
+
+                            <div class="TPanel enabled" id="pnlAgent" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1112px; height: 44px; left: 0px; top: 0px; background-color: rgb(247, 247, 249);">
+                              <div class="TLabel enabled" id="label29" style="display: table; overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; padding: 0px; left: 17px; top: 11px; width: 96px; height: 21px;">
+                                <span style="display: table-cell; vertical-align: middle; text-align: left;">Current Agent</span>
+                              </div>
+
+                              <div class="TEdit enabled" id="edit6" style="overflow: hidden; border: 1px solid silver; box-sizing: border-box; position: absolute; cursor: default; opacity: 1; display: block; left: 112px; top: 11px; width: 172px; height: 21px; background-color: white;">
+                                <input autocomplete="off" readonly style="width: 100%; height: 100%; border-width: 0px; font-size: 12px; background-color: rgb(255, 255, 255);" type="text">
+                              </div>
+
+                              <div class="button TButton enabled" id="button4" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 293px; top: 10px; width: 117px; height: 25px; line-height: 25px;">
+                                Change Agent
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="tab_border_top" style="width: 1112px;"></div>
+
+                        <div class="tab_border_left" style="height: 415px;"></div>
+
+                        <div class="tab_border_right" style="height: 415px;"></div>
+
+                        <div class="tab_border_bottom" style="width: 1112px;"></div>
+
+                        <div class="tab_corner_top_left"></div>
+
+                        <div class="tab_corner_top_right"></div>
+
+                        <div class="tab_corner_bottom_left"></div>
+
+                        <div class="tab_corner_bottom_right"></div>
+
+                        <div class="tab_button_left" style="display: none;"></div>
+
+                        <div class="tab_button_right" style="display: none;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab_border_top" style="width: 1118px;"></div>
+
+                  <div class="tab_border_left" style="height: 485px;"></div>
+
+                  <div class="tab_border_right" style="height: 485px;"></div>
+
+                  <div class="tab_border_bottom" style="width: 1118px;"></div>
+
+                  <div class="tab_corner_top_left"></div>
+
+                  <div class="tab_corner_top_right"></div>
+
+                  <div class="tab_corner_bottom_left"></div>
+
+                  <div class="tab_corner_bottom_right"></div>
+
+                  <div class="tab_button_left" style="display: none;"></div>
+
+                  <div class="tab_button_right" style="display: none;"></div>
+                </div>
+              </div>
+            </div>
+          </div><label class="box_label"></label>
+        </div>
+
+        <div class="TPanel enabled" id="pnlAction" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1130px; height: 34px; left: 0px; top: 0px; background-color: rgb(255, 255, 255);">
+          <div class="TPanel enabled" id="pnlActions" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; display: block; width: 1130px; height: 34px; left: 0px; top: 0px; background-color: rgb(255, 255, 255);">
+            <div class="button TButton" id="btnSave" style="overflow: hidden; position: absolute; cursor: default; opacity: 0.4; font-size: 12px; display: block; left: 7px; top: 4px; width: 75px; height: 25px; line-height: 25px;">
+              Save
+            </div>
+
+            <div class="button TButton enabled" id="btnClose" style="overflow: hidden; position: absolute; cursor: default; opacity: 1; font-size: 12px; display: block; left: 90px; top: 5px; width: 75px; height: 25px; line-height: 25px;">
+              Close
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="datepicker" id="datepicker_665">
+    <div class="datepickerContainer">
+      <table cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td>
+              <table cellpadding="0" cellspacing="0" class="datepickerViewDays">
+                <thead>
+                  <tr>
+                    <th class="datepickerGoPrev">
+                      <a href="http://banka.instajs.com/#"><span class="fa fa-chevron-left"></span></a>
+                    </th>
+
+                    <th class="datepickerMonth" colspan="6">
+                      <a href="http://banka.instajs.com/#"><span>July, 2015</span></a>
+                    </th>
+
+                    <th class="datepickerGoNext">
+                      <a href="http://banka.instajs.com/#"><span class="fa fa-chevron-right"></span></a>
+                    </th>
+                  </tr>
+
+                  <tr class="datepickerDoW">
+                    <th><span>wk</span></th>
+
+                    <th><span>Mo</span></th>
+
+                    <th><span>Tu</span></th>
+
+                    <th><span>We</span></th>
+
+                    <th><span>Th</span></th>
+
+                    <th><span>Fr</span></th>
+
+                    <th><span>Sa</span></th>
+
+                    <th><span>Su</span></th>
+                  </tr>
+                </thead>
+
+                <tbody class="datepickerMonths">
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Jan</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Feb</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Mar</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Apr</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>May</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Jun</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Jul</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Aug</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Sep</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Oct</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Nov</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Dec</span></a>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody class="datepickerDays">
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>27</span></a>
+                    </th>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>29</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>30</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>1</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>2</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>3</span></a>
+                    </td>
+
+                    <td class="datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>4</span></a>
+                    </td>
+
+                    <td class="datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>5</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>28</span></a>
+                    </th>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>6</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>7</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>8</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>9</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>10</span></a>
+                    </td>
+
+                    <td class="datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>11</span></a>
+                    </td>
+
+                    <td class="datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>12</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>29</span></a>
+                    </th>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>13</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>14</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>15</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>16</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>17</span></a>
+                    </td>
+
+                    <td class="datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>18</span></a>
+                    </td>
+
+                    <td class="datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>19</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>30</span></a>
+                    </th>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>20</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>21</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>22</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>23</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>24</span></a>
+                    </td>
+
+                    <td class="datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>25</span></a>
+                    </td>
+
+                    <td class="datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>26</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>31</span></a>
+                    </th>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>27</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>28</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>29</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>30</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>31</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>1</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>2</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>32</span></a>
+                    </th>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>3</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>4</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>5</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>6</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>7</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>8</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>9</span></a>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody class="datepickerYears">
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2009</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2010</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2011</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2012</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2013</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2014</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2015</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2016</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2017</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2018</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2019</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2020</span></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="datepicker" id="datepicker_30">
+    <div class="datepickerContainer">
+      <table cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td>
+              <table cellpadding="0" cellspacing="0" class="datepickerViewDays">
+                <thead>
+                  <tr>
+                    <th class="datepickerGoPrev">
+                      <a href="http://banka.instajs.com/#"><span class="fa fa-chevron-left"></span></a>
+                    </th>
+
+                    <th class="datepickerMonth" colspan="6">
+                      <a href="http://banka.instajs.com/#"><span>July, 2015</span></a>
+                    </th>
+
+                    <th class="datepickerGoNext">
+                      <a href="http://banka.instajs.com/#"><span class="fa fa-chevron-right"></span></a>
+                    </th>
+                  </tr>
+
+                  <tr class="datepickerDoW">
+                    <th><span>wk</span></th>
+
+                    <th><span>Mo</span></th>
+
+                    <th><span>Tu</span></th>
+
+                    <th><span>We</span></th>
+
+                    <th><span>Th</span></th>
+
+                    <th><span>Fr</span></th>
+
+                    <th><span>Sa</span></th>
+
+                    <th><span>Su</span></th>
+                  </tr>
+                </thead>
+
+                <tbody class="datepickerMonths">
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Jan</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Feb</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Mar</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Apr</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>May</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Jun</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Jul</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Aug</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Sep</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Oct</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Nov</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>Dec</span></a>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody class="datepickerDays">
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>27</span></a>
+                    </th>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>29</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>30</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>1</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>2</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>3</span></a>
+                    </td>
+
+                    <td class="datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>4</span></a>
+                    </td>
+
+                    <td class="datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>5</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>28</span></a>
+                    </th>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>6</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>7</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>8</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>9</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>10</span></a>
+                    </td>
+
+                    <td class="datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>11</span></a>
+                    </td>
+
+                    <td class="datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>12</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>29</span></a>
+                    </th>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>13</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>14</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>15</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>16</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>17</span></a>
+                    </td>
+
+                    <td class="datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>18</span></a>
+                    </td>
+
+                    <td class="datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>19</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>30</span></a>
+                    </th>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>20</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>21</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>22</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>23</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>24</span></a>
+                    </td>
+
+                    <td class="datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>25</span></a>
+                    </td>
+
+                    <td class="datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>26</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>31</span></a>
+                    </th>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>27</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>28</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>29</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>30</span></a>
+                    </td>
+
+                    <td class="">
+                      <a href="http://banka.instajs.com/#"><span>31</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>1</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>2</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="datepickerWeek">
+                      <a href="http://banka.instajs.com/#"><span>32</span></a>
+                    </th>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>3</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>4</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>5</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>6</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth">
+                      <a href="http://banka.instajs.com/#"><span>7</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth datepickerSaturday">
+                      <a href="http://banka.instajs.com/#"><span>8</span></a>
+                    </td>
+
+                    <td class="datepickerNotInMonth datepickerSunday">
+                      <a href="http://banka.instajs.com/#"><span>9</span></a>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody class="datepickerYears">
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2009</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2010</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2011</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2012</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2013</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2014</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2015</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2016</span></a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2017</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2018</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2019</span></a>
+                    </td>
+
+                    <td colspan="2">
+                      <a href="http://banka.instajs.com/#"><span>2020</span></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

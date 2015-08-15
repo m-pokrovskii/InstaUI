@@ -1,0 +1,85 @@
+body {
+	background: #eee !important;
+	}
+
+input, select, textarea {
+	color: #777;
+	}
+
+#main {
+	box-shadow: 0px 0 3px #888888;
+	background: #FFF !important;
+	}
+
+/*header*/
+#main > .form_content > #panel1 {
+	background: #0099CC !important;
+	}
+
+
+/*sidebar*/
+#panel2 {
+	background: #414146 !important;
+	color: #fff;
+	}
+
+	#panel2 .menu-item h4 {
+		border-color: #58585B;
+		}
+
+	#panel2 .menu-item ul > li:hover {
+		background: #5C5C63 !important;
+		}
+
+.tab_button_active {
+	background: #fff !important;
+	border-left: 1px solid #dadada;
+	border-right: 1px solid #dadada;
+	border-top: 2px solid #0099CC;
+	}
+
+.tab_sheet {
+	border-color: #dadada;
+	}
+
+.TEdit, 
+.TComboBox,
+.memo,
+.TDateTimePicker {
+	border-color: #dadada !important;
+	}
+
+.box_label {
+	border-bottom: solid 2px #FCCB31;
+	}
+
+.grid td {
+	border-color: #dadada;
+	}
+
+
+#lbAccount {
+	border-color: #fff;
+	}
+
+
+.active-cell {
+	border: 2px solid black !important;
+	}
+
+	.button {
+	  background: #0099CC !important;
+	  color: #fff;
+	}
+
+	.button.enabled:hover {
+	  background: #037196 !important;
+	  }
+
+	.button.enabled:active {
+    background: #037196 !important;
+    }
+
+.combo_box_button {
+	background-color: #0099CC !important;
+	}
